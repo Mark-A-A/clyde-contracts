@@ -1,7 +1,53 @@
-nav ul  {
+.layout__header nav {
+  background-color: red;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-header {
+  flex: auto;
+  padding-left: 25px;
+}
+
+nav ul {
+  flex: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   list-style: none;
+}
+
+nav ul li {
+
+}
+nav ul li button {
+  height: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.layout__body {
+  margin: 0 auto;
+}
+
+section.contracts-tile-wrapper {
+  padding: 20px;
+  /* display: flex;
+  justify-content: center; */
+  margin: 0 auto;
+}
+
+section.contracts-tile-wrapper ul.contracts-tiles-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 400px;
+  padding: 0px;
+}
+section.contracts-tile-wrapper ul.contracts-tiles-list li.contract-tile {
+    margin: 10px;
+    border: solid 2px black;
+    padding: 5px;
 }

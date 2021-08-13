@@ -1,14 +1,5 @@
 import { useState } from "react"
 
-// import contractData from '../../data/exerciseTwoData';
-// {
-//   id: 1,
-//     underwriter: 'Crux Insurance',
-//       term: 2,
-//         contractName: 'The Journal Plan',
-//   },
-
-
 export const useContractsData = (listOfContracts)  => {
   const [direction, setSortDirection] = useState(1);
   const [sortContractKey, setSortKey] = useState(null);
@@ -33,6 +24,7 @@ export const useContractsData = (listOfContracts)  => {
       return (aValue - bValue) * (direction);
     }
   })
+
   return {
     listOfContracts: listOfContractsSorted,
     direction,

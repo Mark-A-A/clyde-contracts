@@ -13,7 +13,7 @@ export const ContractTiles = (props) => {
           contracts.length &&
           contracts.map((contract) => {
             return (
-              <ContractTile contract={contract} />
+              <ContractTile key={`${contract.id}_${contract.contractName}`} contract={contract} />
             )
           })
         }
